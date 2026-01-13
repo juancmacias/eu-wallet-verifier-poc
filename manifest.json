@@ -1,0 +1,26 @@
+{
+  "short_name": "EU Verifier PoC",
+  "name": "EU Digital Identity Wallet Verifier - Proof of Concept",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#003399",
+  "background_color": "#ffffff",
+  "description": "Prueba de concepto del verificador de identidad digital europea (eIDAS 2.0)"
+}

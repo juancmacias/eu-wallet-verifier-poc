@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/eu-wallet-verifier-poc/static/css/main.072364b9.css",
+    "main.js": "/eu-wallet-verifier-poc/static/js/main.e5354b69.js",
+    "static/js/488.112ede15.chunk.js": "/eu-wallet-verifier-poc/static/js/488.112ede15.chunk.js",
+    "index.html": "/eu-wallet-verifier-poc/index.html",
+    "main.072364b9.css.map": "/eu-wallet-verifier-poc/static/css/main.072364b9.css.map",
+    "main.e5354b69.js.map": "/eu-wallet-verifier-poc/static/js/main.e5354b69.js.map",
+    "488.112ede15.chunk.js.map": "/eu-wallet-verifier-poc/static/js/488.112ede15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.072364b9.css",
+    "static/js/main.e5354b69.js"
+  ]
+}
