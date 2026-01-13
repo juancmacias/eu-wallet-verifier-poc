@@ -1,0 +1,125 @@
+.about-page {
+  padding: 2rem 0;
+}
+
+.about-page h1 {
+  color: #003399;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.about-section h2 {
+  color: #003399;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-section h3 {
+  color: #0066cc;
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1.2rem;
+}
+
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #ffc107;
+  color: #333;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  padding: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.checklist li.checked {
+  color: #28a745;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-badge {
+  padding: 0.5rem 1rem;
+  background: #003399;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.author-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #003399;
+}
+
+.author-card h3 {
+  color: #003399;
+  margin-bottom: 1rem;
+}
+
+.author-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.author-links a {
+  color: #0066cc;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.author-links a:hover {
+  background: #e0e0e0;
+}
+
+.disclaimer {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+}
+
+.disclaimer h2 {
+  color: #856404;
+}
+
+.disclaimer p {
+  color: #856404;
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    flex-direction: column;
+  }
+
+  .author-links {
+    flex-direction: column;
+  }
+}

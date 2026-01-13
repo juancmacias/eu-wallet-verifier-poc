@@ -37,7 +37,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && npm run postbuild",
-    "postbuild": "cp public/.htaccess build/.htaccess",
+    "postbuild": "copy public\\.htaccess build\\.htaccess",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

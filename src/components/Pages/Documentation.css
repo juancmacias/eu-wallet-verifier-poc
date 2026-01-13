@@ -1,0 +1,45 @@
+.documentation-page {
+  padding: 2rem 0;
+}
+
+.documentation-page h1 {
+  color: #003399;
+  margin-bottom: 2rem;
+}
+
+.doc-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.doc-section h2 {
+  color: #003399;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.doc-section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.doc-section ul {
+  list-style-position: inside;
+  line-height: 2;
+}
+
+.doc-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.doc-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.doc-section a:hover {
+  text-decoration: underline;
+}
