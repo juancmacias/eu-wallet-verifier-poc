@@ -4,7 +4,7 @@
   "description": "EU Digital Identity Wallet - Verifier Proof of Concept",
   "author": "Juan Carlos Macías <juancmaciassalvador@gmail.com>",
   "license": "MIT",
-  "homepage": "https://juancarlosmacias.es/eu-wallet-verifier",
+  "homepage": "https://juancmacias.github.io/eu-wallet-verifier-poc",
   "repository": {
     "type": "git",
     "url": "https://github.com/juancmacias/eu-wallet-verifier-poc.git"
@@ -31,7 +31,8 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.1"
+    "@testing-library/user-event": "^14.5.1",
+    "gh-pages": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,7 +40,9 @@
     "postbuild": "cp public/.htaccess build/.htaccess",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && echo 'Build completado. Sube el contenido de build/ a cPanel'"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy:cpanel": "npm run build && echo 'Build completado. Sube el contenido de build/ a cPanel'"
   },
   "eslintConfig": {
     "extends": [

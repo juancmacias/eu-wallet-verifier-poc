@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/eu-wallet-verifier">
+    <BrowserRouter basename="/eu-wallet-verifier-poc">
       <App />
     </BrowserRouter>
   </React.StrictMode>
