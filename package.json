@@ -1,0 +1,62 @@
+{
+  "name": "eu-wallet-verifier-poc",
+  "version": "0.1.0",
+  "description": "EU Digital Identity Wallet - Verifier Proof of Concept",
+  "author": "Juan Carlos Macías <juancmaciassalvador@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://juancarlosmacias.es/eu-wallet-verifier",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juancmacias/eu-wallet-verifier-poc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juancmacias/eu-wallet-verifier-poc/issues"
+  },
+  "keywords": [
+    "eu-digital-identity",
+    "eidas",
+    "wallet",
+    "verifier",
+    "poc",
+    "react",
+    "typescript"
+  ],
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^3.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && npm run postbuild",
+    "postbuild": "cp public/.htaccess build/.htaccess",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && echo 'Build completado. Sube el contenido de build/ a cPanel'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
