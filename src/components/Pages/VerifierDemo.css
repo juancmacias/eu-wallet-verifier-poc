@@ -5,34 +5,284 @@
 
 .verifier-demo-page h1 {
   color: #003399;
-  margin-bottom: 2rem;
-}
-
-.demo-container {
-  background: #f8f9fa;
-  border-radius: 8px;
-  padding: 3rem;
-  text-align: center;
-}
-
-.coming-soon {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.coming-soon-icon {
-  font-size: 5rem;
   margin-bottom: 1rem;
 }
 
-.coming-soon h2 {
+.demo-intro {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Selector de credenciales */
+.credential-selector {
+  margin: 2rem 0;
+}
+
+.credential-selector h2 {
+  color: #003399;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.credential-card {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.credential-card:hover {
+  transform: translateY(-5px);
+  border-color: #003399;
+  box-shadow: 0 4px 12px rgba(0, 51, 153, 0.15);
+}
+
+.credential-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.credential-card h3 {
+  color: #003399;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.credential-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Proceso de verificación */
+.verification-process {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.selected-credential-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #003399;
+}
+
+.credential-icon-large {
+  font-size: 3rem;
+}
+
+.selected-credential-info h3 {
+  color: #003399;
+  margin: 0 0 0.25rem 0;
+}
+
+.selected-credential-info p {
+  color: #666;
+  margin: 0;
+}
+
+.verification-step {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.verification-step h2 {
   color: #003399;
   margin-bottom: 1rem;
 }
 
-.coming-soon p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+.verification-step p {
   color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* QR Code Mock */
+.qr-code-mock {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+  background: white;
+  border: 2px solid #003399;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-pattern {
+  width: 180px;
+  height: 180px;
+  background-image: 
+    repeating-linear-gradient(0deg, #003399 0px, #003399 10px, transparent 10px, transparent 20px),
+    repeating-linear-gradient(90deg, #003399 0px, #003399 10px, transparent 10px, transparent 20px);
+  opacity: 0.3;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e0e0e0;
+  border-top: 4px solid #003399;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 1rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* Verification Icon */
+.verification-icon {
+  font-size: 4rem;
   margin-bottom: 1rem;
+}
+
+.verification-icon.success {
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Verified Data */
+.verified-data {
+  background: #f0f8ff;
+  border: 2px solid #003399;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+}
+
+.data-label {
+  font-weight: 600;
+  color: #003399;
+  text-transform: capitalize;
+}
+
+.data-value {
+  color: #333;
+  font-weight: 500;
+}
+
+.verification-note {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  text-align: left;
+  color: #2e7d32;
+  line-height: 1.8;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #003399;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #002266;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 51, 153, 0.3);
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+  transform: translateY(-2px);
+}
+
+/* Disclaimer */
+.demo-disclaimer {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin: 2rem 0;
+  color: #856404;
+}
+
+.demo-disclaimer strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .credential-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-credential-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .data-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
 }
